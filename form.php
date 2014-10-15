@@ -1,4 +1,3 @@
-
 <!DOCTYPE html> 
 <html>
 	<head>
@@ -9,12 +8,36 @@
 		
 		<link rel="stylesheet" href="css/demo.css">
 		<link rel="stylesheet" href="css/sky-forms.css">
-		
+	
+		<script type="text/javascript">
+			
+			function validateForm() {
+ 		   		var a = document.forms["myForm"]["full_name"].value;
+    			var b = document.forms["myForm"]["email_id"].value;
+    			var c = document.forms["myForm"]["user_name"].value;
+    			var d = document.forms["myForm"]["password"].value;
+    			var e = document.forms["myForm"]["confirm_password"].value;
+    			var f = document.forms["myForm"]["need"].value;
+    			var g = document.forms["myForm"]["database"].value;
+    			
+    			if (a == "" || b == "" || c == "" || d == "" || e == "" || f == "" || g == "") {
+	        		alert("Every field must be filled out");
+        			return false;
+   	 			}
+
+   	 			if(d!=e) {
+   	 				alert("Passwords do not match")
+   	 				return false;
+   	 			}
+
+			}
+
+		</script>
 	</head>
 	<body class="bg-cyan">
 		<div class="body body-s">
 		
-			<form action="db.php" class="sky-form" method="POST">
+			<form name ="myForm" action="db.php" onsubmit="return validateForm()" class="sky-form" method="POST">
 				<header>User Account Form</header>
 				
 				<fieldset>					
@@ -47,7 +70,7 @@
 					
 					<section>
 						<label class="input">
-							<input type="password" placeholder="Confirm password">
+							<input type="password" placeholder="Confirm Password" name="confirm_password">
 						</label>
 					</section>
 
