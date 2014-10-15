@@ -2,7 +2,7 @@
 <!DOCTYPE html> 
 <html>
 	<head>
-		<title>Sky Forms</title>
+		<title>Exprimental</title>
 		
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
@@ -15,7 +15,7 @@
 		<div class="body body-s">
 		
 			<form action="" class="sky-form">
-				<header>Registration form</header>
+				<header>User Account Form</header>
 				
 				<fieldset>					
 					<section>
