@@ -14,31 +14,34 @@
 	<body class="bg-cyan">
 		<div class="body body-s">
 		
-			<form action="" class="sky-form">
+			<form action="db.php" class="sky-form" method="POST">
 				<header>User Account Form</header>
 				
 				<fieldset>					
 					<section>
 						<label class="input">
-							<input type="text" placeholder="Full Name">
+							<input type="text" placeholder="Full Name" name="full_name" >
 						</label>
 					</section>
 
 					<section>
 						<label class="input">
-							<input type="text" placeholder="Username">
+							<input type="text" placeholder="Email address" name="email_id">
 						</label>
 					</section>
+				</fieldset>
+
+				<fieldset>
+					<section>
+						<label class="input">
+							<input type="text" placeholder="Username" name="user_name">
+						</label>
+					</section>
+				
 					
 					<section>
 						<label class="input">
-							<input type="text" placeholder="Email address">
-						</label>
-					</section>
-					
-					<section>
-						<label class="input">
-							<input type="password" placeholder="Password">
+							<input type="password" placeholder="Password" name="password">
 						</label>
 					</section>
 					
@@ -47,20 +50,19 @@
 							<input type="password" placeholder="Confirm password">
 						</label>
 					</section>
-				</fieldset>
-					
-				<fieldset>
+
 					<label class="input">
-							<input type="textarea" placeholder="Why do you need this account?">
+							<input type="textarea" placeholder="Why do you need this account?" name="need">
 					</label>
 					<br>	
 					Need Database?
 
 					<section>
 						
-						<label class="radio"><input type="radio" name="checkbox"><i></i>Yes</label>
-						<label class="radio"><input type="radio" name="checkbox"><i></i>No</label>
+						<label class="radio"><input type="radio" name="database" value="1"><i></i>Yes</label>
+						<label class="radio"><input type="radio" name="database" value="0"><i></i>No</label>
 					</section>
+					
 				</fieldset>
 				<footer>
 					<button type="submit" class="button">Submit</button>

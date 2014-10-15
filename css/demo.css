@@ -16,7 +16,7 @@ html, body {
 	padding: 40px;
 }
 .body-s {
-	max-width: 400px;
+	max-width: 500px;
 }
 @media screen and (max-width: 600px) {
 	.body {
